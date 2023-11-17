@@ -32,6 +32,13 @@ Já o Next.js introduz o conceito de Server Side Rendering (SSR), onde o servido
 
 Essa arquitetura do Next.js possibilita o uso de funcionalidades avançadas do React, como os Server Components, que revolucionam o desenvolvimento front-end. O Next.js é o único framework que suporta essa nova arquitetura do React, tornando-o uma escolha recomendada para criar aplicações React atualmente.
 
+**3. Server Components & Client Components**
+
+Os Server Components são componentes criados dentro do Node e são exibidos como HTML puro para o usuário, sem qualquer JavaScript associado. 
+Isso evita o envio de JavaScript desnecessário para o navegador. No entanto, os Server Components têm limitações, pois não podem executar funcionalidades que dependem de JavaScript no lado do cliente, como ouvir eventos. 
+
+Para isso, usamos Client Components, que são componentes que possuem interatividade e enviam o JavaScript necessário para o navegador. A diferença é que os Client Components passam por um processo de hidratação, onde o HTML é convertido em um HTML interativo com JavaScript.
+
 ## ☕ Contatos
 
 Você vai me encontrar em qualquer uma das redes sociais abaixo:
