@@ -39,6 +39,10 @@ Isso evita o envio de JavaScript desnecessário para o navegador. No entanto, os
 
 Para isso, usamos Client Components, que são componentes que possuem interatividade e enviam o JavaScript necessário para o navegador. A diferença é que os Client Components passam por um processo de hidratação, onde o HTML é convertido em um HTML interativo com JavaScript.
 
+**4. Fetch de dados nos componentes**
+
+Ao utilizar Server Components, o HTML só é devolvido para o usuário após o servidor terminar de criar o componente. Isso permite que os componentes sejam assíncronos, possibilitando a utilização de await dentro deles. Com isso, podemos fazer chamadas assíncronas para APIs ou outras operações, como carregar dados iniciais. Essa abordagem melhora a experiência do usuário, pois os dados já estarão disponíveis no HTML renderizado pelo servidor, evitando a necessidade de aguardar o carregamento no lado do cliente. Além disso, o uso de Server Components facilita a indexação nos mecanismos de busca, tornando a aplicação mais amigável para SEO. No entanto, é importante ter cuidado com o tempo de carregamento dos componentes, pois operações assíncronas podem impactar no desempenho da aplicação.
+
 ## ☕ Contatos
 
 Você vai me encontrar em qualquer uma das redes sociais abaixo:
