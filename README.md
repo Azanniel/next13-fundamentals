@@ -43,6 +43,10 @@ Para isso, usamos Client Components, que são componentes que possuem interativi
 
 Ao utilizar Server Components, o HTML só é devolvido para o usuário após o servidor terminar de criar o componente. Isso permite que os componentes sejam assíncronos, possibilitando a utilização de await dentro deles. Com isso, podemos fazer chamadas assíncronas para APIs ou outras operações, como carregar dados iniciais. Essa abordagem melhora a experiência do usuário, pois os dados já estarão disponíveis no HTML renderizado pelo servidor, evitando a necessidade de aguardar o carregamento no lado do cliente. Além disso, o uso de Server Components facilita a indexação nos mecanismos de busca, tornando a aplicação mais amigável para SEO. No entanto, é importante ter cuidado com o tempo de carregamento dos componentes, pois operações assíncronas podem impactar no desempenho da aplicação.
 
+**5. Loading e Streaming SSR**
+
+Foi mostrado como criar um arquivo de carregamento específico para cada página da aplicação, permitindo personalizar a mensagem exibida durante o carregamento. Além disso, foi explicado que o arquivo de carregamento herda o layout da aplicação, garantindo uma experiência consistente para o usuário. Também foi introduzido o conceito de Streaming SSR, que permite exibir parcialmente o conteúdo de uma página enquanto os dados são carregados, proporcionando um feedback visual instantâneo para o usuário.
+
 ## ☕ Contatos
 
 Você vai me encontrar em qualquer uma das redes sociais abaixo:
