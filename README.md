@@ -47,6 +47,14 @@ Ao utilizar Server Components, o HTML só é devolvido para o usuário após o s
 
 Foi mostrado como criar um arquivo de carregamento específico para cada página da aplicação, permitindo personalizar a mensagem exibida durante o carregamento. Além disso, foi explicado que o arquivo de carregamento herda o layout da aplicação, garantindo uma experiência consistente para o usuário. Também foi introduzido o conceito de Streaming SSR, que permite exibir parcialmente o conteúdo de uma página enquanto os dados são carregados, proporcionando um feedback visual instantâneo para o usuário.
 
+**6. Abstração de Client Components**
+
+Os componentes do tipo client são reativos, respondendo a alterações de estado ou do componente pai. No entanto, ao empregar async nesses componentes, podemos enfrentar problemas, pois o código interno pode ser executado repetidamente sempre que ocorrer uma atualização.
+
+Uma abordagem mais eficaz é realizar operações assíncronas, como o fetch de dados, em componentes do tipo client utilizando estratégias alternativas. Recomendamos o uso de useEffect ou a adoção de bibliotecas especializadas, como o ReactQuery. Essas alternativas permitem um controle mais preciso sobre o momento da execução do código assíncrono, evitando execuções desnecessárias durante cada atualização.
+
+É crucial manter uma abstração eficiente nos componentes do tipo client, isolando a lógica interativa em componentes separados. Essa prática não apenas melhora a legibilidade e a manutenção do código, mas também tem impactos positivos no desempenho, reduzindo a quantidade de JavaScript enviado para o navegador. Ao modularizar a interatividade, conseguimos otimizar a carga da aplicação, proporcionando uma experiência mais ágil ao usuário.
+
 ## ☕ Contatos
 
 Você vai me encontrar em qualquer uma das redes sociais abaixo:
